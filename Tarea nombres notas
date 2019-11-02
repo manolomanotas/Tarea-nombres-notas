@@ -1,0 +1,22 @@
+k=[]
+m=[]
+n=True
+r=0
+print("Entra los nombres, pon No cuando quieras parar")
+while r==0:
+    k.append(input("Dame un nombre"))
+    yet=(input("Quieres seguir?"))
+    if yet=="No":
+        break
+print(k)
+for i in (k):
+    m.append(input("Dame una nota que corresponda a cada nombre"))
+print(m)
+for i in (m):
+    if n==True:
+        K=i
+        n=False
+    elif i>K:
+        K=i
+rot=m.index(K)
+print("La mejor nota seria", m.pop(rot), "perteneciente al estudiante", k.pop(rot) )
